@@ -1,0 +1,1 @@
+Version 6 Clinical Enterprise UI with MOH branding, hospital styling, gradient severity cards, responsive dashboard, PDF export, references integration, and workbook-generated JSON database.

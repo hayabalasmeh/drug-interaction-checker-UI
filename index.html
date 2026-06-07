@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Clinical Drug Interaction Checker</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="hero">
+<img src="assets/moh_logo.jfif" class="logo">
+<div>
+<h1>Clinical Drug Interaction Checker</h1>
+<h2>AlHussain New Salt Hospital</h2>
+<p>Jordan Ministry of Health</p>
+<p class="author">Developed by Clinical Pharmacist Haya Balasmeh</p>
+</div>
+</header>
+
+<section class="dashboard">
+<div class="search-panel">
+<h3>Interaction Search</h3>
+<input placeholder="Drug A">
+<input placeholder="Drug B">
+<select>
+<option>All Severities</option>
+<option>Major</option>
+<option>Moderate</option>
+<option>Minor</option>
+</select>
+<button>Check Interaction</button>
+<button onclick="window.print()">Export PDF</button>
+</div>
+
+<div class="stats">
+<div class="stat-card"><h4>Total Interactions</h4><span>60</span></div>
+<div class="stat-card major">Major</div>
+<div class="stat-card moderate">Moderate</div>
+<div class="stat-card minor">Minor</div>
+</div>
+</section>
+
+<section class="results">
+<div class="severity-card major-gradient">
+<h3>Major Interaction</h3>
+<p>Critical interaction requiring immediate review and intervention.</p>
+</div>
+
+<div class="severity-card moderate-gradient">
+<h3>Moderate Interaction</h3>
+<p>Requires monitoring, dose adjustment, or scheduling considerations.</p>
+</div>
+
+<div class="severity-card minor-gradient">
+<h3>Minor Interaction</h3>
+<p>Low clinical significance but should be documented when appropriate.</p>
+</div>
+</section>
+
+<footer>
+<button onclick="document.getElementById('refs').style.display='flex'">References</button>
+</footer>
+
+<div id="refs" class="modal">
+<div class="modal-content">
+<h2>Clinical References</h2>
+<ul><li>References for AlHussain New Salt Hospital – Major Drug–Drug Interaction (DDI) Protocol</li><li>1. Lexicomp Online, Drug Interactions: Wolters Kluwer Health, 2025 update.</li><li>2. Micromedex® Solutions (IBM Watson Health), Drug Interactions Database.</li><li>3. Drugs.com Interaction Checker.</li><li>4. Goodman & Gilman’s The Pharmacological Basis of Therapeutics, 14th Edition (2023).</li><li>5. AHFS Drug Information (American Society of Health-System Pharmacists), 2024 Edition.</li><li>6. UpToDate® – 'Digoxin: Drug Information' and 'Interactions of digoxin with other drugs' (updated 2025).</li><li>7. FDA Drug Label: Digoxin (Lanoxin®). Revised 2023 – U.S. Food and Drug Administration.</li><li>8. European Society of Cardiology (ESC) Heart Failure Guidelines, 2023.</li><li>9. Stockley’s Drug Interactions, 12th Edition, Pharmaceutical Press, 2022.</li><li>10. FDA Drug Safety Communications  (2024).</li><li>11. European Medicines Agency (EMA) Pharmacovigilance Updates – CYP1A2 inhibitors and tizanidine (2023).</li><li>12. Goodman & Gilman’s The Pharmacological Basis of Therapeutics, 14th Edition,
+ McGraw-Hill, 2023.</li><li>13. DrugBank Online – Theophylline and metabolic interactions profile, accessed October 2025</li><li>14. AHFS Drug Information, American Society of Health-System Pharmacists, 2024.</li><li>15. British National Formulary (BNF) 87, NICE Publications, 2024.</li><li>16. U.S. Food and Drug Administration (FDA). Drug Safety Communications, 2024.</li><li>17. European Society of Cardiology (ESC) Guidelines for the Management of Cardiovascular Diseases, 2023.
+Used for combining ACEI/ARBs, NSAIDs, and anticoagulant monitoring.</li><li>18. World Health Organization (WHO). Model Formulary, 2023 revision.</li></ul>
+<button onclick="document.getElementById('refs').style.display='none'">Close</button>
+</div>
+</div>
+</body>
+</html>
